@@ -1,3 +1,5 @@
+[Backend app](https://github.com/Dimitreee/image_recognizer_backend)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

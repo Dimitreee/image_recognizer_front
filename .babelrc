@@ -1,0 +1,28 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "modules": false,
+      "targets": {
+        "browsers": ["last 2 versions", "ie >= 11"]
+      }
+    }],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "@babel/syntax-dynamic-import",
+    "@babel/proposal-export-default-from",
+    "@babel/proposal-class-properties",
+    "babel-plugin-styled-components",
+    ["module-resolver", {
+      "alias": {
+        "^/(.+)": "./src/\\1"
+      }
+    }],
+    ["@babel/plugin-transform-runtime", {
+      "regenerator": true
+    }],
+    ["inline-import", {
+      "extensions": [".css", ".woff"]
+    }]
+  ]
+}
